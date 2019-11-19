@@ -1,5 +1,1 @@
-function updated(msg) {
-   alert(message);
-}
-
-updated("Testing Ingnore This");
+alert("Testing Ingore This")
