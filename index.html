@@ -18,6 +18,7 @@
 .alert.success {background-color: #4CAF50; text-align: center;}
 .alert.info {background-color: #2196F3; text-align: center;}
 .alert.warning {background-color: #ff0000; text-align: center;}
+  .alert.update {background-color: #FF5733; text-align: center;}
 
 .closebtn {
   margin-left: 15px;
@@ -59,13 +60,22 @@
     <div class="alert warning">
       <p id="demo2"><strong>New Years Countdown: </strong></p>
     </div>
+    <div class="alert update">
+      <p id="demo3><strong> Time: </strong</p>
+             </div>
     <script>
+             var timefunction = setInterval(function() {
+             
+             var nowl = new Date().getTime();
+             document.getElementById("demo3").innerHTML = "<strong> Time:" + nowl + "<strong>";
+      }
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 24, 2019 24:00:00").getTime(); // M Time.
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
   // Get todays date and time
   var now = new Date().getTime();
+          
   
   // Find the distance between now an the count down date
   var distance = countDownDate - now;
