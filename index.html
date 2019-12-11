@@ -119,7 +119,21 @@ var countdownfunction = setInterval(function() {
     document.getElementById("demo2").innerHTML = "Happy New Years";
   }
 }, 1000);
-     
+   function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('demo3').innerHTML = "<strong>" +
+  h + ":" + m + ":" + s + "</strong>";
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
       /*var timefunction = setInterval(function(){
          var nowl = new Date().getTime();
         document.getElementById("demo3").innerHTML = "<strong> Time: " + nowl + "</strong>
