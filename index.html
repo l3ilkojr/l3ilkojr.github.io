@@ -16,8 +16,8 @@
 }
 
 .alert.success {background-color: #4CAF50; text-align: center;}
-.alert.info {background-color: #2196F3;}
-.alert.warning {background-color: #ff9800;}
+.alert.info {background-color: #2196F3; text-align: center;}
+.alert.warning {background-color: #ff9800; text-align: center;}
 
 .closebtn {
   margin-left: 15px;
@@ -56,6 +56,9 @@
     
  <p id ="demo"><strong>Christmas Countdown: </strong></p>
 </div>
+    <div class="alert warning">
+      <p id="demo2"><strong>New Years Countdown: </strong></p>
+    </div>
     <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 24, 2019 24:00:00").getTime(); // M Time.
@@ -85,6 +88,26 @@ var countdownfunction = setInterval(function() {
     document.getElementById("demo").innerHTML = "Happy Christmas";
   }
 }, 1000);
+      
+  var count2newyears = new Date("Dec 31, 2019 24:00:00").getTime(); // M Time
+      var countdown2newyearsfunction = setInterval(function() {
+        var now2 = new Date().getTime();
+        var distance2 = count2newyears - now2;
+        
+        var daysa = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hoursa = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000* 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsa = Math.floor((distance % (1000 * 60)) / 1000);
+       
+        document.getElementById("demo2").innerHTML = "<strong> New Years Countdown:  </strong>" +  "<strong>" + daysa + "d " + hoursa + "h "
+  + minutesa + "m " + secondsa + "s <strong>";
+        
+         if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo2").innerHTML = "Happy New Years";
+  }
+}, 1000);
+        
 </script>
    <!-- <div class="icon-bar">
          <a id="menutext" href="index.html">Home</a>
