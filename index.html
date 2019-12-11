@@ -90,13 +90,15 @@ var countdownfunction = setInterval(function() {
 }, 1000);
       
   var count2newyears = new Date("Dec 31, 2019 24:00:00").getTime(); // M Time
+      var now2 = new Date().getTime();
+      
       var countdown2newyearsfunction = setInterval(function() {
-        var now2 = new Date().getTime();
+        
         var distance2 = count2newyears - now2;
         
         var daysa = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hoursa = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000* 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var minutesa = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var secondsa = Math.floor((distance % (1000 * 60)) / 1000);
        
         document.getElementById("demo2").innerHTML = "<strong> New Years Countdown:  </strong>" +  "<strong>" + daysa + "d " + hoursa + "h "
