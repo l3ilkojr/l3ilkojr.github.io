@@ -93,7 +93,9 @@ function addMessageToScreen(message) {
     if (message.content == "/time") {
         var d = new Date();
         var nameEl = document.querySelector('.input.name');
-        if (nameEl.value === 'BM-2342') return sendMessageToScaleDrone("SYSTEM", "Something," + " The time is " + d.getHours() + ":" + d.getMinutes());
+        if (nameEl.value === 'BM-2342') {
+             sendMessageToScaleDrone("SYSTEM", "Something," + " The time is " + d.getHours() + ":" + d.getMinutes());
+        } else {
         sendMessageToScaleDrone("SYSTEM", message.name + ", the time is " + d.getHours() + ":" + d.getMinutes());
     } else if (message.content == "/systemerror") {
         if (message.name == "BM-2342") {
