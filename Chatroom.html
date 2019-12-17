@@ -1,0 +1,50 @@
+<html>
+  <head>
+    
+
+    
+
+    <title>HMS Chatroom</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script type="text/javascript" src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+    <script type="text/javascript" src="js/sindex.js"></script>
+    <link rel="icon" href="https://png.pngtree.com/element_pic/16/11/11/e9c2716870c2c876b15dff2681060b7f.jpg" type="image/gif" sizes="16x16"> 
+    
+  </head>
+  <body onunload="Close()" onload="Load()" onoffline="offline()" ononline="onConnect()" onerror="errorMessage()">
+    <div class="header">
+       <div class="header-right">
+         
+         
+         <a href = "" onclick="Closewindow()">Close Window</a>
+         
+      </div>
+      <h1>Chatroom</h1>
+     
+    </div>
+    <!-- put banner here -->
+    
+      
+    <!-- end banner -->
+    <div class="text-area"></div>
+    <form class="input-area" onsubmit="onSubmitForm(); return false">
+      <input type="text" class="input name" placeholder="Name...">
+      <input type="text" class="input content" placeholder="Message...">
+      <input type="submit" class="input button" value="Send">
+
+    </form>
+    <audio>
+      <source src="" type="audio/mpeg">
+    </audio>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135739147-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135739147-1');
+</script>
+
+  </body>
+</html>
