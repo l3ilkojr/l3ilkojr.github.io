@@ -1,0 +1,68 @@
+body{
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+#main-header {
+    background-color: rgb(44, 136, 241);
+    color: #fff;
+}
+
+#navbar {
+    background: rgb(44, 136, 241);
+    color: #fff;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#login {
+    padding: 0px 100px;
+    margin: 16px 100px;
+}
+
+#login label {
+    display: block;
+}
+
+#login input[type="text"] {
+    padding: 8px;
+    width: 100%;
+}
+
+#login input[type="password"] {
+    padding: 8px;
+    width: 100%;
+}
+
+.btn {
+    background-color: rgb(44, 136, 241);
+    color: #fff;
+    padding: 10px 8px;
+    border: none;
+    margin-top: 16px;
+    width: 100%;
+}
