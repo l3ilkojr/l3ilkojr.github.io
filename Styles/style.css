@@ -1,0 +1,110 @@
+body, input {
+    font-size: 17px;
+    font-weight: 100;
+  }
+  
+  .message {
+    margin: 15px 0;
+    font-weight: 100;
+  }
+  
+  .input-area {
+    display: flex;
+    font-weight: 100;
+  }
+  
+  .input {
+    width: 100%;
+    line-height: 40px;
+    border: 2px solid #C3C3C3;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-weight: 100;
+    
+  }
+  
+  .input.name {
+    flex-basis: 200px;
+    flex-grow: 0;
+    margin-right: 5px;
+    font-weight: 100;
+    background-color:#333333;
+    border-color: #222222;
+    
+  }
+  
+  .input.content {
+    flex-grow: 1;
+    margin-right: 5px;
+    font-weight: 100;
+    background-color:#333333;
+    border-color: #222222;
+  }
+  
+  .input.button {
+    flex-basis: 120px;
+    flex-grow: 0;
+    font-weight: 100;
+    background-color:#333333;
+    border-color: #222222;
+  }
+  h1{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 100;
+  }
+  h2{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 100;
+    background-color: #f48342;
+  }
+  h3{
+      font-family: sans-serif;
+      color: white;
+      font-weight: 25;
+      
+  }
+  body{
+    background-color: #2f3136;
+    font-weight: 100;
+    margin:0px;
+    color: white;
+  }
+  div{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  xmp{
+      color: white;
+  }
+  a:link, a:visited, button {
+    background-color: #333333;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:8px;
+    font-family:sans-serif;
+    font-weight:100;
+    position:static;
+  }
+  
+  a:hover, a:active, button {
+    background-color: grey;
+  }
+  .header{
+   background-color:#232323; 
+    border-color: #232323;
+    padding:12px;
+    overflow:hidden;
+    top:0px;
+    position:static;
+  }
+  .header-right{
+    float:right;
+    
+  }
+  
