@@ -1258,6 +1258,10 @@ Game.Launch=function()
 			{
 				str+='<div class="section">Updates</div>'+
 				'<div class="subsection">'+
+				'<div class="title">Working on :</div>'+
+				'<div class="listing"> - New Things to gain money and keep playing'+
+					
+				'<div class="subsection">'+
 				'<div class="title">Now working on :</div>'+
 				'<div class="listing">-android port (iOS and others later)</div>'+
 				'<div class="listing">-dungeons</div>'+
@@ -1814,6 +1818,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<1000000000) list.push('Your cookies are rewriting the fundamental laws of the universe.');
 				else if (Game.cookiesEarned<10000000000) list.push('A local news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>');
 				else if (Game.cookiesEarned<10100000000) list.push('it\'s time to stop playing');//only show this for 100 millions (it's funny for a moment)
+				else if (Game.cookiesEarned<10000000000) list.push('You\'re cookies  are starting to own the world!')
 			}
 			
 			if (Game.elderWrath>0 && (Game.pledges==0 || Math.random()<0.5))
