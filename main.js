@@ -568,6 +568,7 @@ Game.Launch=function()
 					if (Game.cookiesEarned>=1000000000) Game.Win('Oblivion');
 					if (Game.cookiesEarned>=1000000000000) Game.Win('From scratch');
 					if (Game.cookiesEarned>=1000000000000000) Game.Win('Nihilism');
+					if (Game.cookiesEarned>=1000000000000000000000000) Game.Win('Immpossible')
 				}
 				Game.cookiesReset+=Game.cookiesEarned;
 				Game.cookies=0;
@@ -1819,6 +1820,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<10000000000) list.push('A local news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>');
 				else if (Game.cookiesEarned<10100000000) list.push('it\'s time to stop playing');//only show this for 100 millions (it's funny for a moment)
 				else if (Game.cookiesEarned<10000000000) list.push('You\'re cookies  are starting to own the world!')
+				else if (Game.cookiesEarned<100000000000000000) list.push('You\'re the master of the world!!!!')
 			}
 			
 			if (Game.elderWrath>0 && (Game.pledges==0 || Math.random()<0.5))
@@ -2467,7 +2469,7 @@ Game.Launch=function()
 		order=700;new Game.Upgrade('Ambrosia','Alchemy labs are <b>twice</b> as efficient.',Game.Objects['Alchemy lab'].basePrice*tier4,[6,2]);
 		order=800;new Game.Upgrade('Sanity dance','Portals are <b>twice</b> as efficient.<q>We can change if we want to.<br>We can leave our brains behind.</q>',Game.Objects['Portal'].basePrice*tier4,[7,2]);
 		order=900;new Game.Upgrade('Causality enforcer','Time machines are <b>twice</b> as efficient.<q>What happened, happened.</q>',1234567890000,[8,2]);
-		
+		order=100 new Game.Upgrade('Impossible  Cookie', 'Cookes are <b>100000%</b> as efficient. <q>What what impossible!.</q>', 1000000000000000000, [12,1])
 		order=5000;
 		new Game.Upgrade('Lucky day','Golden cookies appear <b>twice as often</b> and last <b>twice as long</b>.',777777777,[10,1]);
 		new Game.Upgrade('Serendipity','Golden cookies appear <b>twice as often</b> and last <b>twice as long</b>.',77777777777,[10,1]);
